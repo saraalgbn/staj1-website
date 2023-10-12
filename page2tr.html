@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>page2</title>
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="framework.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body >
+  <!-- start of the header-->
+    <header  id="head">
+
+        <nav>
+
+        
+      
+            <i onclick="toggleNotifi()" 
+            style="font-size:30px;
+            color:#C4924F ;
+            position: relative; 
+            top: 20px; 
+            left: 35% ;  
+            cursor: pointer;"class="fa fa-bell" ><span class="badge">3</span>
+            </i>
+
+            <a href="page2.html"><i class='fas fa-globe' 
+              style='font-size:30px;
+              color:#C4924F ;
+              position: relative; 
+              top: 20px; 
+              left: 36% ;    
+              cursor: pointer;'></i>
+                  </a> 
+          
+          <div class="notifi-box" id="box">
+            <div class="notifi-item">
+              <div class="text">
+                 <h4>Bildirim 1</h4>
+                </div> 
+            </div>
+      
+            <div class="notifi-item">
+              <div class="text">
+                 <h4>Bildirim 2</h4>
+                </div> 
+            </div>
+      
+            <div class="notifi-item">
+              <div class="text">
+                 <h4>Bildirim 3</h4>
+                </div> 
+            </div>
+            </div>
+      
+          </div>
+        </nav>
+  
+          <span id="test" style="font-size:30px;cursor:pointer ; color:#C4942F ; position:relative ; top:0px; left:30px;float : left;" onclick="openNav()">&#9776;</span>
+      </div>
+      </header>
+    <!-- end of the header-->
+  
+  
+  
+      <!-- start of the sidelist-->
+  
+      <div id="mySidenav" class="sidenav">
+  
+  
+          <img id="logo" src="assets/logo.png" >
+          <p class="first">Ana menü </p>
+          <hr class="linepage1">
+          <a  id="home" href="page1tr.html" >Ana sayfa </a> <img class="home" src="assets/home.png" style="width:30px ">
+       
+          <a id="settings" href="page2tr.html"><i class='fas fa-money-check' style='font-size:20px; color:#C4942F; position:relative; '></i><span style="position:relative ; left:18px;">Malzemeler/faturalar </span></a>
+          
+            <a id="packets" href="page3tr.html"><i class='fa-solid fa-wifi' style='font-size:20px; color:#C4942F;'> 
+            </i> <span style="position:relative ; left:11px;">Paketler</span> </a>
+  
+          <a id="settings1" href="page4tr.html"> Kullanıcı İzinleri  </a> <img id="settings11"  src="assets/settings.png" style="width:30px" >
+  
+          <nav id="menu">
+              <a onclick="fAbreGuias()" id="personal" href="#">kişisel sayfam </a> <img class="personal"   src="assets/personal.png" style="width:30px">
+              <!--sublist-->
+              <ul  id="guias" >
+                  <div class="vl"></div>
+                <li class="li1"><a href="#"> kişisel sayfam</a> <span class="arrow"> &#8594;</span></li>
+                <li class="li1"> <a href="#">Finansal hesaplarım </a> <span class="arrow"> &#8594;</span></li>
+                <li class="li1"> <a href="#"> Yapılacaklar listem</a> <span class="arrow"> &#8594;</span> </li>
+              </ul>
+                <!--sublist-->
+  
+            </nav>
+      
+  
+          <a  id="logout" href="firsttr.html">çıkış Yap </a> <img id="logoutimg"    src="assets/logout.png" style="width:30px">
+  
+      </div>
+
+    <!--start of the main container-->
+    <section id="main" >
+        <article>
+        
+            <p class="bills"> Malzemeler/faturalar  </p>
+            <form action="/action_page.php">
+                <div class="input-icons">
+
+                    <input  class="billssearch" type="text" placeholder=" Veri filtresi " name="search" >
+                    <i id="searchicon" class="fa fa-search"></i>
+
+
+                    <nav>
+                    <i onclick="searchlist()"  id="downicon" class='fas fa-angle-down'></i>
+                    <div class="list-box" id="boxlist">
+                    <div class="list-item">
+                    <div class="text1">
+                    <h4>1</h4>
+                    </div> 
+                    </div>
+      
+                    <div class="list-item">
+                    <div class="text1">
+                    <h4>2</h4>
+                    </div> 
+                    </div>
+      
+                    <div class="list-item">
+                    <div class="text1">
+                    <h4>3</h4>
+                    </div> 
+                    </div>
+
+                    <div class="list-item">
+                        <div class="text1">
+                        <h4>4</h4>
+                        </div> 
+                        </div>
+
+                    </div>
+                </div>                 
+                </div>
+                    </nav>
+
+                    
+          
+           
+
+            <div>
+                <p class="billsList"> Fatura listesi  </p>
+
+                <p class="billsAdd"> Fatura ekle  <i class="fa-solid fa-plus" style="position: relative; bottom:22px; right:30px; background-color:rgba(5, 68, 94, 1) ; border-radius: 50%; padding:5px; color:rgba(196, 148, 47, 1) ;"></i></p>
+            </div>
+
+            <table class="billsTable">
+                <tr>
+                    <td> Arama ____________ </td>
+                    <td style="float:right ;" >Girişi göster ____________ <i style="position:relative; top:-10px; left:-15px;"id="tableicon" class='fas fa-angle-down '></i></td>
+                </tr>
+                <tr>
+                <td colspan="2">1</td>
+                </tr>
+                <tr>
+                    <td colspan="2">2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">5</td>
+                </tr>
+                <tr>
+                    <td colspan="2">6</td>
+                </tr>
+                <tr>
+                    <td colspan="2">7</td>
+                </tr>
+
+            </table>
+          
+            </article>
+        </section>
+
+        <!--end of the main container-->
+
+
+
+<script>
+
+//start of side list
+    document.getElementById("test").addEventListener("click", myFunction);
+
+    function myFunctionTwo(open) {
+        if(open){
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("head").style.marginLeft = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("openlist").style.marginLeft = "250px";
+
+        }else{
+            document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("head").style.marginLeft = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("openlist").style.marginLeft = "0";
+            }
+    }       
+
+    function myFunction(event) {//have myFunction queue the work for everything that needs to be done.
+    if(! event.currentTarget.opened){
+    event.currentTarget.opened = true;
+    myFunctionTwo(true);
+
+    }else{
+    event.currentTarget.opened = false;
+    myFunctionTwo(false);
+
+    }
+
+    var x = event.currentTarget.children[0];
+    x.classList.toggle("fa-times");       
+    x.classList.toggle("fa-bars");     
+    }
+
+//end of side list
+
+//notification
+var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+
+  document.getElementById("box").style.display = "block";
+
+	if (down) {
+		box.style.height  = '0px';
+		box.style.opacity = 0;
+		down = false;
+	}else {
+		box.style.height  = 'auto';
+		box.style.opacity = 1;
+		down = true;
+	}
+}
+
+//notification
+
+//searchlist
+
+
+var boxlist  = document.getElementById('boxlist');
+var down = false;
+
+function searchlist(){
+
+    document.getElementById("boxlist").style.display = "flex";
+
+      if (down) {
+        boxlist.style.height  = '0px';
+        boxlist.style.opacity = 0;
+          down = false;
+      }else {
+        boxlist.style.height  = 'auto';
+        boxlist.style.opacity = 1;
+          down = true;
+      }
+  }
+
+//searchlist
+
+
+
+
+
+
+//sidelist sublist
+function fAbreGuias() {
+  var vGuias = document.getElementById('guias');
+  document.getElementById("settings1").style.top="575px";
+  document.getElementById("settings11").style.top="575px";
+
+  document.getElementById("logout").style.top="620px";
+  document.getElementById("logoutimg").style.top="620px";
+  if (vGuias.style.display == "block") { // if vGuias hidden, display it 
+    vGuias.style.display = "none";
+   
+    document.getElementById("settings11").style.top="505px";
+    document.getElementById("settings1").style.top="500px";
+
+  document.getElementById("logout").style.top="555px";
+  document.getElementById("logoutimg").style.top="553px";
+  } else { // if vGuias displayed, hidden it
+    vGuias.style.display = "block";
+  }
+}
+//end of sidelist sublist      
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

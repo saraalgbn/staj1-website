@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="framework.css" />
+    <title>Turkish login</title>
+</head>
+<body>
+
+
+    <a href="first.html"><i class='fas fa-globe' 
+        style='font-size:30px;
+        color:#C4924F ;
+        position: relative; 
+        top: 15px; 
+        left: 5% ;  
+        cursor: pointer;'></i>
+            </a> 
+
+
+            <div id="main" style="margin-top:30px ;">
+
+
+                       
+            <div class="leftcontainer">
+    
+                <div id="left">
+                    <h1> Al-Furat elektronik sistemi  </h1>
+                    <p style=" position:relative ; top:-40px ; "  >
+                        Organizasyonunuzu yönetmek için modern bir sistem olan Al-Furat Elektronik Sistemine hoş geldiniz. Al-Furat Elektronik Sistemi, ister küçük ister büyük bir şirket yönetiyor olun, kuruluşunuzdaki kaynakları ve operasyonları yönetmek için kapsamlı bir çözüm sunar.
+                        <br><br>
+                        Basit ve sezgisel bir kullanıcı arayüzü kullanarak çok çeşitli işlevlere ve bilgilere kolayca erişebilirsiniz. İster özel raporlar oluşturmak, iş akışını izlemek veya ekipleri koordine etmek isteyin, Al-Furat Elektronik Sistemi size tüm bu görevleri kolaylıkla gerçekleştirme olanağı sağlar.
+                    </p>
+    
+                    <img style=" position:relative ; top:-50px ; " src="assets/left.png">
+                </div>
+    
+                   <br>
+    
+    
+                <div id="right">
+    
+                    <img style=" position:relative ; top:50px ; "  src="assets/right.png">
+                    <p  style=" position:relative ; top:50px ; ">
+                        Al-Furat elektronik sistemi ile veri güvenliğine ve korumasına güvenebilirsiniz. Bilgiler şifrelenir ve güvenli bir şekilde saklanır, böylece iş verilerinizin gizliliği korunur ve bilgi bütünlüğü korunur.
+                        Kuruluşunuzun veya iş sektörünüzün büyüklüğü ne olursa olsun, Al-Furat Elektronik Sistemi benzersiz ihtiyaçlarınızı karşılamak ve başarıya ulaşmanıza yardımcı olmak için tasarlanmıştır.Sadece giriş yapın ve işletmenizin tam kontrolünün ve kapsamlı vizyonunun keyfini çıkarın. Günümüzün rekabetçi pazarında organizasyonunuzu yönetmek ve mükemmelliğe ulaşmak için mükemmel bir çözüm.
+​
+                    </p>
+
+                </div>
+    
+            </div>
+    
+            <!--right side-->
+            <div class="rightcontainer ">
+                <div>
+    
+                    <img id="logo" src="assets/logo.png">
+    
+                    <form action="">
+                        <br>
+                        <input type="text" id="username" name="username" placeholder=" Kullanıcı adı (8 veya daha az)">
+                        <br>
+                        <input type="password" id="pwd" name="pwd" placeholder=" şifre (6 veya daha fazla) "><br><br>
+                        <input class="form-submit-button" type="submit" value="kayıt olmak">
+                      </form>
+                </div>
+    
+    
+            </div>
+    
+
+
+            </div>
+
+    </main>
+
+    <script >
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let userInput = document.querySelector("[name='username']");
+            let passwordInput = document.querySelector("[name='pwd']");
+        
+            document.forms[0].onsubmit = function (e) {
+                let userValid = false;
+                let passwordValid = false;
+        
+                if (userInput.value !== "" && userInput.value.length <= 8) {
+                    userValid = true;
+                }
+        
+                if (passwordInput.value.length >= 6) {
+                    passwordValid = true;
+                }
+        
+                if (userValid && passwordValid) {
+                    
+                    window.open('page1tr.html');
+        
+        
+                } else {
+        
+                    e.preventDefault();
+                    alert('Lütfen kullanıcı adınızı ve şifrenizi kontrol edin.');
+                }
+            };
+        });
+
+   
+
+
+
+    </script>
+</body>
+</html>

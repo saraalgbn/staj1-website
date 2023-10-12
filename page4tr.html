@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>page4</title>
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="framework.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+
+
+</head>
+<body >
+  <!-- start of the header-->
+    <header  id="head">
+
+      
+
+        <nav>
+
+        
+      
+            <i onclick="toggleNotifi()" 
+            style="font-size:30px;
+            color:#C4924F ;
+            position: relative; 
+            top: 20px; 
+            left: 30% ;  
+            cursor: pointer;"class="fa fa-bell" ><span class="badge">3</span>
+            </i>
+
+            <a href="page4.html"><i class='fas fa-globe' 
+              style='font-size:30px;
+              color:#C4924F ;
+              position: relative; 
+              top: 20px; 
+              left: 36% ;    
+              cursor: pointer;'></i>
+                  </a> 
+          
+          <div class="notifi-box" id="box">
+            <div class="notifi-item">
+              <div class="text">
+                 <h4>Bildirim 1</h4>
+                </div> 
+            </div>
+      
+            <div class="notifi-item">
+              <div class="text">
+                 <h4>Bildirim 2</h4>
+                </div> 
+            </div>
+      
+            <div class="notifi-item">
+              <div class="text">
+                 <h4>Bildirim 3</h4>
+                </div> 
+            </div>
+            </div>
+      
+          </div>
+        </nav>
+  
+          <span id="test" style="font-size:30px;cursor:pointer ; color:#C4942F ; position:relative ; top:0px; left:30px;float : left;" onclick="openNav()">&#9776;</span>
+      </div>
+      </header>
+    <!-- end of the header-->
+  
+  
+  
+      <!-- start of the sidelist-->
+  
+      <div id="mySidenav" class="sidenav">
+  
+  
+          <img id="logo" src="assets/logo.png" >
+          <p class="first">Ana menü </p>
+          <hr class="linepage1">
+          <a  id="home" href="page1tr.html" >Ana sayfa </a> <img class="home" src="assets/home.png" style="width:30px ">
+       
+          <a id="settings" href="page2tr.html"><i class='fas fa-money-check' style='font-size:20px; color:#C4942F; position:relative; '></i><span style="position:relative ; left:18px;">Malzemeler/faturalar </span></a>
+          
+            <a id="packets" href="page3tr.html"><i class='fa-solid fa-wifi' style='font-size:20px; color:#C4942F;'> 
+            </i> <span style="position:relative ; left:11px;">Paketler</span> </a>
+  
+          <a id="settings1" href="page4tr.html"> Kullanıcı İzinleri  </a> <img id="settings11"  src="assets/settings.png" style="width:30px" >
+  
+          <nav id="menu">
+              <a onclick="fAbreGuias()" id="personal" href="#">kişisel sayfam </a> <img class="personal"   src="assets/personal.png" style="width:30px">
+              <!--sublist-->
+              <ul  id="guias" >
+                  <div class="vl"></div>
+                <li class="li1"><a href="#"> kişisel sayfam</a> <span class="arrow"> &#8594;</span></li>
+                <li class="li1"> <a href="#">Finansal hesaplarım </a> <span class="arrow"> &#8594;</span></li>
+                <li class="li1"> <a href="#"> Yapılacaklar listem</a> <span class="arrow"> &#8594;</span> </li>
+              </ul>
+                <!--sublist-->
+  
+            </nav>
+      
+  
+          <a  id="logout" href="firsttr.html">çıkış Yap </a> <img id="logoutimg"    src="assets/logout.png" style="width:30px">
+  
+      </div>
+    <!-- end of the sidelist-->
+
+
+    <!--start of the main container-->
+    <section id="main" >
+        <article>
+
+            <h1 style="font-size: 30px ; color: #979797 ;     margin-left: 30px;
+
+            ;"> <i class="fa-solid fa-user-gear" style="color:#05445E ; font-size: 30px ;"></i> Kullanıcı İzinleri</h1>
+            <hr >
+
+            <div class="mainlists">
+
+
+                <div class="employeelist">
+                    <h2>  <i class="fa fa-users" aria-hidden="true" style="color:#C4924F ;"> </i> Çalışanların listesi
+                    </h2>
+                      <div class="searechemployee">
+                        <input type="text" id="myInput" onkeyup="searchlist()" placeholder=" Bir çalışan bulun ">
+                    
+                        <ul id="myUL">
+                          <li onclick="open1()" ><a href="#"> Muhammed El Bitari </a></li>
+                          <li onclick="open2()"><a href="#">  Adham Ahmed El Hac</a></li>
+                        
+                          <li onclick="open3()"><a href="#"> İsmail Şerif </a></li>
+                          <li onclick="open4()"><a href="#"> Ahmed Kanbawi</a></li>
+                        
+                          <li onclick="open5()"><a href="#"> Abdul Rahman Nargile</a></li>
+                        
+                        </ul>
+                      </div>
+              
+    
+                </div>
+    
+                <div class="employeeinfo" >
+                    <div class="employeename">
+                        <p  id="employeeinfo1">  Muhammed El Bitari  </p>
+                        <p  id="employeeinfo2"> Adham Ahmed El Hac  </p>
+                        <p  id="employeeinfo3"> İsmail Şerif </p>
+                        <p  id="employeeinfo4">  Ahmed Kanbawi </p>
+                        <p  id="employeeinfo5"> Abdul Rahman Nargile  </p>
+
+
+
+                    </div>
+
+                    <div class="responsivetable">
+
+                        <table>
+                            <tr>
+                                <td>  </td>
+                                <td> okuma </td>
+
+                                <td> ekleme </td>
+                                <td> değişiklik </td>
+                                <td> silme </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> hesaplar </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Kutular </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Depolar </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Kullanıcılar </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                                <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label> </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <br>
+                    <hr style="width: 90%;">
+                    <p class="blockedp">  Belirli bir kullanıcı hesabını engelleme </p>
+
+                    <div class="blokkingbox">
+
+                        <div class="accounts">
+                            <p class="accountsp"> hesaplar </p>
+
+                            <select id="accounts" multiple>
+                                <option value="1"> Finansal hesap 3   </option>
+                                <option value="2"> Finansal hesap 4 </option>
+                                <option value="3"> Finansal hesap 5  </option>
+                                <option value="4">  Finansal hesap 6 </option>
+                            </select>
+
+                            <p class="storagep"> Depolar </p>
+                            <div class="storagediv">
+                                <p> 10 hesap seçildi </p>
+                            </div>
+
+                        </div>
+
+                        <div class="accountdiv">
+                            <p> Kutular </p>
+
+                            <select id="accounts1" multiple>
+                                <option value="1"> Finansal hesap 3   </option>
+                                <option value="2"> Finansal hesap 4 </option>
+                                <option value="3"> Finansal hesap 5  </option>
+                                <option value="4">  Finansal hesap 6 </option>
+                          </select>
+
+                          <p class="storagep"> Depolar </p>
+                          <div class="storagediv">
+                              <p> 0. Seçim</p>
+                          </div>
+
+                        </div>
+
+
+                    </div>
+    
+                </div>
+
+                  
+        
+
+
+
+              
+
+
+            </div>
+
+
+
+            
+
+
+
+
+
+        </article>
+    </section>
+
+    <!--end of the main container-->
+
+
+
+<script>
+
+//start of side list
+document.getElementById("test").addEventListener("click", myFunction);
+
+function myFunctionTwo(open) {
+    if(open){
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("head").style.marginLeft = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("openlist").style.marginLeft = "250px";
+
+    }else{
+        document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("head").style.marginLeft = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("openlist").style.marginLeft = "0";
+        }
+}       
+
+function myFunction(event) {//have myFunction queue the work for everything that needs to be done.
+if(! event.currentTarget.opened){
+event.currentTarget.opened = true;
+myFunctionTwo(true);
+
+}else{
+event.currentTarget.opened = false;
+myFunctionTwo(false);
+
+}
+
+var x = event.currentTarget.children[0];
+x.classList.toggle("fa-times");       
+x.classList.toggle("fa-bars");     
+}
+
+//end of side list
+
+//notification
+var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+
+document.getElementById("box").style.display = "block";
+
+if (down) {
+    box.style.height  = '0px';
+    box.style.opacity = 0;
+    down = false;
+}else {
+    box.style.height  = 'auto';
+    box.style.opacity = 1;
+    down = true;
+}
+}
+
+//notification
+
+
+
+
+
+
+
+//sidelist sublist
+function fAbreGuias() {
+  var vGuias = document.getElementById('guias');
+  document.getElementById("settings1").style.top="575px";
+  document.getElementById("settings11").style.top="575px";
+
+  document.getElementById("logout").style.top="620px";
+  document.getElementById("logoutimg").style.top="620px";
+  if (vGuias.style.display == "block") { // if vGuias hidden, display it 
+    vGuias.style.display = "none";
+   
+    document.getElementById("settings11").style.top="505px";
+    document.getElementById("settings1").style.top="500px";
+
+  document.getElementById("logout").style.top="555px";
+  document.getElementById("logoutimg").style.top="553px";
+  } else { // if vGuias displayed, hidden it
+    vGuias.style.display = "block";
+  }
+}
+//end of sidelist sublist      
+
+
+//searchlist
+function searchlist() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+//searchlist
+
+
+// list
+new MultiSelectTag('accounts', {
+    rounded: true,    // default true
+    shadow: true,      // default false
+    placeholder: 'arama',  // default Search...
+    onChange: function(values) {
+        console.log(values)
+    }
+})
+
+new MultiSelectTag('accounts1', {
+  rounded: true,    // default true
+  shadow: true,      // default false
+  placeholder: 'arama',  // default Search...
+  onChange: function(values) {
+      console.log(values)
+  }
+})
+
+
+//emplyee info
+
+function open1() {
+  var vGuias = document.getElementById('employeeinfo1');
+  document.getElementById('employeeinfo2').style.display= "none" ;
+  document.getElementById('employeeinfo3').style.display= "none" ;
+  document.getElementById('employeeinfo4').style.display= "none" ;
+  document.getElementById('employeeinfo5').style.display= "none" ;
+  if (vGuias.style.display == "inline-block") { // if vGuias hidden, display it 
+    vGuias.style.display = "none";
+  } else { // if vGuias displayed, hidden it
+    vGuias.style.display = "inline-block";
+  }
+}
+
+function open2() {
+  var vGuias1 = document.getElementById('employeeinfo2');
+  document.getElementById('employeeinfo1').style.display= "none" ;
+  document.getElementById('employeeinfo3').style.display= "none" ;
+  document.getElementById('employeeinfo4').style.display= "none" ;
+  document.getElementById('employeeinfo5').style.display= "none" ;
+
+  if (vGuias1.style.display == "inline-block") { // if vGuias hidden, display it 
+    vGuias1.style.display = "none";
+  } else { // if vGuias displayed, hidden it
+    vGuias1.style.display = "inline-block";
+  }
+}
+
+function open3() {
+  var vGuias2 = document.getElementById('employeeinfo3');
+  document.getElementById('employeeinfo1').style.display= "none" ;
+  document.getElementById('employeeinfo2').style.display= "none" ;
+  document.getElementById('employeeinfo4').style.display= "none" ;
+  document.getElementById('employeeinfo5').style.display= "none" ;
+
+  if (vGuias2.style.display == "inline-block") { // if vGuias hidden, display it 
+    vGuias2.style.display = "none";
+  } else { // if vGuias displayed, hidden it
+    vGuias2.style.display = "inline-block";
+  }
+}
+
+function open4() {
+  var vGuias3 = document.getElementById('employeeinfo4');
+  document.getElementById('employeeinfo1').style.display= "none" ;
+  document.getElementById('employeeinfo3').style.display= "none" ;
+  document.getElementById('employeeinfo2').style.display= "none" ;
+  document.getElementById('employeeinfo5').style.display= "none" ;
+
+  if (vGuias3.style.display == "inline-block") { // if vGuias hidden, display it 
+    vGuias3.style.display = "none";
+  } else { // if vGuias displayed, hidden it
+    vGuias3.style.display = "inline-block";
+  }
+}
+
+function open5() {
+  var vGuias4 = document.getElementById('employeeinfo5');
+  document.getElementById('employeeinfo1').style.display= "none" ;
+  document.getElementById('employeeinfo3').style.display= "none" ;
+  document.getElementById('employeeinfo4').style.display= "none" ;
+  document.getElementById('employeeinfo2').style.display= "none" ;
+
+  if (vGuias4.style.display == "inline-block") { // if vGuias hidden, display it 
+    vGuias4.style.display = "none";
+  } else { // if vGuias displayed, hidden it
+    vGuias4.style.display = "inline-block";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="framework.css" />
+    <link rel="stylesheet" href="style1.css">
+    <title>Arabic login</title>
+</head>
+<body>
+
+
+   <a href="firsttr.html"><i class='fas fa-globe' 
+    style='font-size:30px;
+    color:#C4924F ;
+    position: relative; 
+    top: 15px; 
+    left: 5% ;  
+    cursor: pointer;'></i>
+        </a> 
+
+            <div id="main" style="margin-top:30px ;">
+
+                <div class="leftcontainer">
+    
+                    <div style="text-align:right" id="left">
+                        <h1 style=" width :360px;">سیستم الفرات الاكتروني </h1>
+                        <p>
+        
+                            مرحبًا بك في نظام الفرات الإلكتروني النظام الحديث لإدارة مؤسستك. يوفر نظام الفرات الإلكتروني حلاً شاملاً لإدارة الموارد والعمليات في مؤسستك، سواء كنت تدير شركة صغيرة أو كبيرة
+                            <br><br>
+                            باستخدام واجهة مستخدم بسيطة وبديهية، يمكنك الوصول إلى مجموعة كبيرة من الوظائف والمعلومات بسهولة. سواء أكنت ترغب في إنشاء تقارير مخصصة أو مراقبة تدفق العمل أو تنسيق الفرق، فإن نظام الفرات الإلكتروني يوفر لك القدرة على تنفيذ جميع هذه المهام بكل يسر</p>
+        
+                        <img src="assets/left.png">
+                    </div>
+        
+                       <br>
+        
+        
+                    <div id="right">
+        
+                        <img style="position:relative ; top:30px;" src="assets/right.png">
+                        <p style="position:relative ; top:50px;">مع نظام الفرات الإلكتروني، يمكنك الاعتماد على أمان البيانات وحمايتها. يتم تشفير المعلومات وتخزينها بشكل آمن مما يحمي سرية بيانات عملك ويحافظ على سلامة المعلومات.
+        
+                            بغض النظر عن حجم مؤسستك أو قطاع عملك، فإن نظام الفرات الإلكتروني مصمم لتلبية احتياجاتك الفريدة ومساعدتك في تحقيق النجاح فقط قم بتسجيل الدخول واستمتع بالتحكم الكامل والرؤية الشاملة لأعمالك.
+                            
+                            نظام الفرات الإلكتروني - الحل الأمثل لإدارة مؤسستك وتحقيق التفوق في سوق المنافسة اليوم.</p>
+    
+                    </div>
+        
+                </div>
+        
+                <!--right side-->
+                <div  class="rightcontainer ">
+                    <div >
+        
+                        <img id="logo" src="assets/logo.png">
+        
+                        <form action="" >
+                            <br>
+                            <input style="text-align:right" type="text" id="username" name="username" placeholder="اسم المستخدم ( 8 أو اقل )">
+                            <br>
+                            <input style="text-align:right" type="password" id="pwd" name="pwd" placeholder=" كلمة المرور ( 6 أو أكثر ) "><br><br>
+                            <input  class="form-submit-button" type="submit" value="تسجيل الدخول">
+                          </form>
+                    </div>
+        
+        
+                </div>
+
+
+            </div>
+
+    </main>
+
+    <script >
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let userInput = document.querySelector("[name='username']");
+            let passwordInput = document.querySelector("[name='pwd']");
+        
+            document.forms[0].onsubmit = function (e) {
+                let userValid = false;
+                let passwordValid = false;
+        
+                if (userInput.value !== "" && userInput.value.length <= 8) {
+                    userValid = true;
+                }
+        
+                if (passwordInput.value.length >= 6) {
+                    passwordValid = true;
+                }
+        
+                if (userValid && passwordValid) {
+                    
+                    window.open('page1.html');
+        
+        
+                } else {
+        
+                    e.preventDefault();
+                    alert('يرجى التحقق من اسم المستخدم وكلمة المرور الخاصة بك.');
+                }
+            };
+        });
+
+
+
+
+    </script>
+</body>
+</html>

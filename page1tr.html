@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="framework.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+</head>
+<body >
+  <!-- start of the header-->
+    <header  id="head">
+
+      
+
+      <nav>
+
+        
+      
+          <i onclick="toggleNotifi()" 
+          style="font-size:30px;
+          color:#C4924F ;
+          position: relative; 
+          top: 20px; 
+          left: 35% ;  
+          cursor: pointer;"class="fa fa-bell" ><span class="badge">3</span>
+          </i>
+
+          <a href="page1.html"><i class='fas fa-globe' 
+            style='font-size:30px;
+            color:#C4924F ;
+            position: relative; 
+            top: 20px; 
+            left: 36% ;    
+            cursor: pointer;'></i>
+                </a> 
+        
+        <div class="notifi-box" id="box">
+          <div class="notifi-item">
+            <div class="text">
+               <h4>Bildirim 1</h4>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <h4>Bildirim 2</h4>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <h4>Bildirim 3</h4>
+              </div> 
+          </div>
+          </div>
+    
+        </div>
+      </nav>
+
+        <span id="test" style="font-size:30px;cursor:pointer ; color:#C4942F ; position:relative ; top:0px; left:30px;float : left;" onclick="openNav()">&#9776;</span>
+    </div>
+    </header>
+  <!-- end of the header-->
+
+
+
+    <!-- start of the sidelist-->
+
+    <div id="mySidenav" class="sidenav">
+
+
+        <img id="logo" src="assets/logo.png" >
+        <p class="first">Ana menü </p>
+        <hr class="linepage1">
+        <a  id="home" href="page1tr.html" >Ana sayfa </a> <img class="home" src="assets/home.png" style="width:30px ">
+       
+        <a id="settings" href="page2tr.html"><i class='fas fa-money-check' style='font-size:20px; color:#C4942F; position:relative; '></i><span style="position:relative ; left:18px;">Malzemeler/faturalar </span></a>
+        
+          <a id="packets" href="page3tr.html"><i class='fa-solid fa-wifi' style='font-size:20px; color:#C4942F;'> 
+          </i> <span style="position:relative ; left:11px;">Paketler</span> </a>
+
+        <a id="settings1" href="page4tr.html"> Kullanıcı İzinleri  </a> <img id="settings11"  src="assets/settings.png" style="width:30px" >
+
+        <nav id="menu">
+            <a onclick="fAbreGuias()" id="personal" href="#">kişisel sayfam </a> <img class="personal"   src="assets/personal.png" style="width:30px">
+            <!--sublist-->
+            <ul  id="guias" >
+                <div class="vl"></div>
+              <li class="li1"><a href="#"> kişisel sayfam</a> <span class="arrow"> &#8594;</span></li>
+              <li class="li1"> <a href="#">Finansal hesaplarım </a> <span class="arrow"> &#8594;</span></li>
+              <li class="li1"> <a href="#"> Yapılacaklar listem</a> <span class="arrow"> &#8594;</span> </li>
+            </ul>
+              <!--sublist-->
+
+          </nav>
+    
+
+        <a  id="logout" href="firsttr.html">çıkış Yap </a> <img id="logoutimg"    src="assets/logout.png" style="width:30px">
+
+    </div>
+    <!-- end of the sidelist-->
+
+
+    <!--start of the main container-->
+    <section id="main" >
+        <article>
+          <!--first section: systems-->
+            <div  class="systems">
+                <div style=" width: 200px ;height:
+                50px; text-align:center; background-color:#FFFFFF;      
+                box-shadow: 0px 4px 4px rgba(36, 72, 113, 0.47);
+                border-radius: 10px; ">
+                <p> <i class='fas fa-city' style='font-size:20px;color:#244871 ; padding-right: 15px;'></i> Depo sistemi </p>
+                    
+                </div>
+
+                <div style=" width: 200px ; text-align:center; background-color:#FFFFFF;      
+                box-shadow: 0px 4px 4px rgba(36, 72, 113, 0.47);
+                border-radius: 10px;">
+                <p> <i class='fas fa-city' style='font-size:20px;color:#244871 ; padding-right: 15px;'></i> Barış Pınarı Sistemi  </p>
+                </div>
+
+                <div style=" width: 200px ; height:
+                50px; text-align:center; background-color:#FFFFFF;      
+                box-shadow: 0px 4px 4px rgba(36, 72, 113, 0.47);
+                border-radius: 10px;">
+                <p> <i class='fas fa-city' style='font-size:20px;color:#244871 ; padding-right: 15px;'></i> Metro sistemi </p>
+                </div>
+            
+                <div style=" width: 200px ; height:
+                50px; text-align:center; background-color:#FFFFFF;      
+                box-shadow: 0px 4px 4px rgba(36, 72, 113, 0.47);
+                border-radius: 10px;">
+                <p> <i class='fas fa-city' style='font-size:20px;color:#244871 ; padding-right: 5px;'></i> İnsan kaynakları sistemi  </p>
+                    
+                </div>
+            </div>
+
+            <!--end of the first section:systems-->
+            
+            
+            <!--second section: charts-->
+            <p id="adress"> Grafikler </p>
+
+            <div class="graphAdress">
+                <div style=" width: 150px ; height:
+                30px; text-align:center; background-color: #05445E;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 17px; position:relative; left:-55px; " >
+                    <p> Barış İnternet Paketi </p>
+                </div>
+                
+                <div style=" width: 150px ; 
+                height: 30px; 
+                text-align:center; 
+                background-color: #05445E;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 17px;  position:relative; left:-55px;
+
+                ">
+                    <p> Barış Pınarı bir metadır </p>
+                </div>
+
+                <div style=" width: 150px ; 
+                height:30px; 
+                text-align:center; 
+                background-color: #05445E;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 17px; position:relative; left:-55px;">
+                <p>Mağazalar</p>
+                </div>
+            </div>
+
+
+            <div class="graphChart">
+                <div >
+                <canvas style="  
+                height: 150px; 
+                width: 250px; ; 
+                background: #FFFFFF;
+                border: 0.4px solid #1E1E1E;
+                border-radius: 10px;
+                position:relative;
+                " id="myChart"></canvas>
+                </div>
+    
+                <div >
+                <canvas style=" width:250px ; height: 150px; box-sizing: border-box;
+                background: #FFFFFF;
+                border: 0.4px solid #1E1E1E;
+                border-radius: 10px;" id="myChart1"></canvas>
+                </div>
+                    
+                <div >
+                <canvas style=" width:250px ; height: 150px; box-sizing: border-box;
+                background: #FFFFFF;
+                border: 0.4px solid #1E1E1E;
+                border-radius: 10px;" id="myChart2"></canvas>
+                </div>
+            </div>
+
+            <!--end of the second section: charts-->
+
+
+            <!-- third section: todolist-->
+            <p id="adress1" class="mt-0 mb-20" > Yapılacaklar listesi </p>
+
+
+
+
+            <div class="content">
+
+              <div class="projects">
+                  <div class="responsive-table">
+                    <table class="fs-15 w-full">
+                      <thead>
+                        <tr>
+                          <td >Görev adı </td>
+                          <td> Görev durumu</td>
+                          <td> Görev türü</td>
+                          <td>Zamanı takip et </td>
+                          <td> Bir ekibe görev tanıtımı </td>
+                          <td>vade tarihi </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><i class="fa-solid fa-grip-vertical" style="font-size:25px ;color:#DADADA;" ></i>
+                              <i class='fa-solid fa-circle-check'></i>Eve yeni fiber internet kurulumu
+                          </td>
+                          <td><span  class="glow1">.</span>  Devam ediyor  </td>
+                          <td><p style="width: 60px; height:20px ; text-align:center ;border-radius:50px ; background-color:#C4942F ;color:#FFFFFF;">Lojistik</p></td>
+                          <td><p style="border:1px solid; width:100px ; text-align:center;"><i  class="fa fa-pause-circle" style="font-size:10px;color:#FF8A00;"></i> 7:00:00 <i style='font-size:10px' class='far'>&#xf017;</i></p></td>
+                          <td>
+                            <img src="imgs/team-01.png" alt="" />
+                            <img src="imgs/team-02.png" alt="" />
+                            <img src="imgs/team-03.png" alt="" />
+                          </td>
+                          <td>
+                              01/07/2023
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa-solid fa-grip-vertical" style="font-size:25px ;color:#DADADA;" ></i> <i class='fa-solid fa-circle-check' style="color:green"></i> Eve yeni fiber internet kurulumu </td>
+                          <td> <span class="glow">.</span> Uygulandı  </td>
+                          <td><p style="width: 60px; height:20px ; text-align:center ;border-radius:50px ; background-color:#C4942F ;color:#FFFFFF ;">Lojistik</p></td>
+                          <td><p style="border:1px solid; width:100px ; text-align:center;"><i class="fa fa-play-circle" style="font-size:10px;color:#00FF38"></i> 7:00:00 <i style='font-size:10px' class='far'>&#xf017;</i></p> </td>
+                          <td>
+                            <img src="imgs/team-01.png" alt="" />
+                            <img src="imgs/team-02.png" alt="" />
+                            <img src="imgs/team-05.png" alt="" />
+                          </td>
+                          <td>01/07/2023</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa-solid fa-grip-vertical" style="font-size:25px ;color:#DADADA;" ></i> <i class='fa-solid fa-circle-check'></i>Sözleşme dosyalarının düzenlenmesi - İnternet</td>
+                          <td><span class="glow2">.</span>Reddedildi </td>
+                          <td><p style="width: 60px; height:20px ; text-align:center ;border-radius:50px ; background-color:#05445E ;;color:#FFFFFF">Ofis işi</p></td>
+                          <td><p style="border:1px solid; width:100px ; text-align:center;"><i class="fa fa-pause-circle" style="font-size:10px;color:#FF8A00;"></i> 7:00:00 <i style='font-size:10px' class='far'>&#xf017;</i></p></td>
+                          <td>
+                            <img src="imgs/team-02.png" alt="" />
+                            <img src="imgs/team-03.png" alt="" />
+                            <img src="imgs/team-05.png" alt="" />
+      
+                          </td>
+                          <td>01/07/2023
+                        </tr>
+                        <tr>
+                          <td><i class="fa-solid fa-grip-vertical" style="font-size:25px ;color:#DADADA;" ></i> <i class='fa-solid fa-circle-check'></i> Eve yeni fiber internet kurulumu </td>
+                          <td> <span class="glow3">.</span> Henüz uygulanmadı </td>
+                          <td ><p style="width: 60px; height:20px ; text-align:center ;border-radius:50px ; background-color:#C4942F ;;color:#FFFFFF">Lojistik</p></td>
+                          <td> <p style="border:1px solid; width:100px ; text-align:center;"><i class="fa fa-play-circle" style="font-size:10px;color:#00FF38"></i>7:00:00 <i style='font-size:10px' class='far'>&#xf017;</i></p></td>
+                          <td>
+                            <img src="imgs/team-01.png" alt="" />
+                            <img src="imgs/team-02.png" alt="" />
+                            <img src="imgs/team-05.png" alt="" />
+      
+                          </td>
+                          <td>01/07/2023</td>
+                        </tr>
+              
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+          </div>
+
+          <!--end of the third section: todolist-->
+
+            </article>
+        </section>
+
+        <!--end of the main container-->
+
+
+
+<script>
+
+//start of side list
+    document.getElementById("test").addEventListener("click", myFunction);
+
+    function myFunctionTwo(open) {
+        if(open){
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("head").style.marginLeft = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("openlist").style.marginLeft = "250px";
+
+        }else{
+            document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("head").style.marginLeft = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("openlist").style.marginLeft = "0";
+            }
+    }       
+
+    function myFunction(event) {
+    if(! event.currentTarget.opened){
+    event.currentTarget.opened = true;
+    myFunctionTwo(true);
+
+    }else{
+    event.currentTarget.opened = false;
+    myFunctionTwo(false);
+    }
+
+    var x = event.currentTarget.children[0];
+    x.classList.toggle("fa-times");       
+    x.classList.toggle("fa-bars");     
+    }
+
+//end of side list
+
+//notification
+var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+
+  document.getElementById("box").style.display = "block";
+
+	if (down) {
+		box.style.height  = '0px';
+		box.style.opacity = 0;
+		down = false;
+	}else {
+		box.style.height  = 'auto';
+		box.style.opacity = 1;
+		down = true;
+	}
+}
+
+//notification
+
+
+
+
+
+
+
+//sidelist sublist
+function fAbreGuias() {
+  var vGuias = document.getElementById('guias');
+  document.getElementById("settings1").style.top="575px";
+  document.getElementById("settings11").style.top="575px";
+
+  document.getElementById("logout").style.top="620px";
+  document.getElementById("logoutimg").style.top="620px";
+  if (vGuias.style.display == "block") { // if vGuias hidden, display it 
+    vGuias.style.display = "none";
+   
+    document.getElementById("settings11").style.top="505px";
+    document.getElementById("settings1").style.top="500px";
+
+  document.getElementById("logout").style.top="555px";
+  document.getElementById("logoutimg").style.top="553px";
+  } else { // if vGuias displayed, hidden it
+    vGuias.style.display = "block";
+  }
+}
+//end of sidelist sublist      
+
+
+//charts
+      const xValues = ["", "", "", ""];
+      const yValues = [15, 10, 3, 5];
+      const barColors = ["#05445E", "#C4942F","#05445E","#05445E"];
+      
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          legend: {display: false},
+          title: {
+            display: false,
+          }
+        }
+      });
+
+      new Chart("myChart1", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          legend: {display: false},
+          title: {
+            display: false,
+          }
+        }
+      });
+
+      new Chart("myChart2", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          legend: {display: false},
+          title: {
+            display: false,
+          }
+        }
+      });
+
+//charts
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+

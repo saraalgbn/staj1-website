@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+background-color: rgb(0, 0, 0);
+}
+
+#main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
+
+.leftcontainer {
+
+    display: flex;
+    background-color: white;
+    width:65%;
+    border-radius: 1%;
+}
+
+.rightcontainer{
+    width:30%;
+}
+
+#logo{
+
+    position: relative;
+    width: 300px;
+    height: 278px;
+    top: 50px  ;
+}
+
+#left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height:50%;
+    padding: 5%;
+}
+
+#right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height:50%;
+    padding: 5%;
+}
+
+p {
+    color: black;
+    padding: 5%;
+    color: gray;
+    position:relative;
+    top:-20px;
+
+}
+
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 250px;
+
+
+}
+
+form{
+ 
+    text-align: center;
+    position: relative;
+    bottom:-100px;
+    left:70px;
+    width:300px;
+
+
+}
+
+input[type=text], select {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+
+  input[type=password], select {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.form-submit-button {
+    width: 150px;
+    height: 40px;
+	background: 	#dfaf20;
+	color: #fff;
+	border: 1px solid 	#dfaf20;
+	border-radius: 5px;
+}
+
+.form-submit-button:hover {
+	background: #b3994d;
+	color: #fff;
+	border: 1px solid #b3994d;
+	border-radius: 5px;
+}
+
+
+

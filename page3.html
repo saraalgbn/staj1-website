@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>page3</title>
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="framework.css" />
+    <link rel="stylesheet" href="page1.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+</head>
+<body >
+  <!-- start of the header-->
+    <header  id="head">
+
+      
+
+      <nav>
+      
+        <i onclick="toggleNotifi()" 
+        style="font-size:30px;
+        color:#C4924F ;
+        position: relative; 
+        top: 20px; 
+        right:85%;
+        cursor: pointer;"class="fa fa-bell" ><span class="badge">3</span>
+        </i>
+
+        <a href="page3tr.html"><i class='fas fa-globe' 
+          style='font-size:30px;
+          color:#C4924F ;
+          position: relative; 
+          top: 20px; 
+          right:91%;
+          cursor: pointer;'></i>
+              </a> 
+        
+        <div class="notifi-box" id="box">
+          <div class="notifi-item">
+            <div class="text">
+               <h4>Notification 1</h4>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <h4>Notification 2</h4>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <h4>Notification 3</h4>
+              </div> 
+          </div>
+          </div>
+    
+        </div>
+      </nav>
+
+        <span id="test" style="font-size:30px;cursor:pointer ; color:#C4942F ; position:relative ; right:5%;" onclick="openNav()">&#9776;</span>
+    </div>
+    </header>
+  <!-- end of the header-->
+
+
+
+    <!-- start of the sidelist-->
+
+    <div id="mySidenav" class="sidenav">
+
+
+        <img id="logo" src="assets/logo.png" >
+        <p class="first">القائمة الرئيسية</p>
+        <hr class="linepage1">
+        <a  id="home" href="page1.html" >الصفحة الرئيسية</a> <img class="home" src="assets/home.png" style="width:30px ">
+
+        <a id="settings" href="page2.html">  المواد / الفواتير <i class='fas fa-money-check' style='font-size:20px; color:#C4942F;; position:relative; right:-43px ; top:-20px;'></i> 
+        
+          <a id="packets" href="page3.html"> <span style="position:relative ; left:-10px;">الباقات </span>  <i class='fa-solid fa-wifi' style='font-size:20px; color:#C4942F;'>  </i> 
+
+          <a id="settings1" href="page4.html"> صلاحيات المستخدمين </a> <img id="settings11"  src="assets/settings.png" style="width:30px" >
+  
+  
+  
+
+        <nav id="menu">
+            <a onclick="fAbreGuias()" id="personal" href="#">صفحتي الشخصية</a> <img class="personal"   src="assets/personal.png" style="width:30px">
+            <!--sublist-->
+            <ul  id="guias" >
+                <div class="vl"></div>
+              <li class="li1"><a href="#">صفحتي الشخصية</a> <span class="arrow"> &#8592;</span></li>
+              <li class="li1"> <a href="#">حساباتي المالية</a> <span class="arrow"> &#8592;</span></li>
+              <li class="li1"> <a href="#">قائمة مهامي</a> <span class="arrow"> &#8592;</span> </li>
+            </ul>
+              <!--sublist-->
+
+          </nav>
+    
+
+        <a  id="logout" href="first.html">تسجيل الخروج</a> <img id="logoutimg"    src="assets/logout.png" style="width:30px">
+
+    </div>
+
+    
+
+    <!--start of the main container-->
+    <section id="main" >
+        <article>
+
+
+          <!--start of first section-->
+          <div id="boxes">
+
+            <div class="boxesdiv">
+              <p class="boxtitle">صندوق نبع السلام باقات</p>
+              <p class="boxvalue">10,213 LT</p>
+              <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;  color:#C4942F'></i>
+              </p>
+              <p class="tl">TL</p>
+
+              <div class="yellowbox">
+                <i class='fas fa-briefcase' style='font-size:30px;color:white; position:relative ; top:-70px; right:9px;'></i>
+              </div>
+  
+            </div>
+  
+            <div class="boxesdiv">
+              <p class="boxtitle">صندوق نبع السلام باقات</p>
+              <p class="boxvalue">10,213 LT</p>
+              <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+              </p>
+              <p class="tl">TL</p>
+
+              <div class="yellowbox"> 
+                <i class='fas fa-briefcase' style='font-size:30px;color:white; position:relative ; top:-70px; right:9px;'></i>
+
+              </div>
+            </div>
+  
+            <div class="boxesdiv"> 
+              <p class="boxtitle">صندوق شفيق السلام باقات</p>
+              <p class="boxvalue">10,213 LT</p>
+              <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+              </p>
+              <p class="tl">TL</p>
+
+              <div class="yellowbox">
+                <i class='fas fa-briefcase' style='font-size:30px;color:white; position:relative ; top:-70px; right:9px;'></i>
+
+              </div>
+            </div>
+
+
+          </div>
+            
+          <!--end of first section-->
+
+          <p id="icondown">  ...اظهر المزيد   <i class='fas fa-angle-down' style='font-size:20px; color:#05445E;'></i>
+          </p>
+
+          <!--start of section 2-->
+              <div id="boxes">
+    
+                <div class="boxesdiv">
+                  <p class="boxtitle">صندوق نبع السلام باقات</p>
+                  <p class="boxvalue">10,213 LT</p>
+                  <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+                  </p>
+                  <p class="tl">TL</p>
+    
+                  <div class="yellowbox">
+                    <i class='fas fa-shopping-cart'style='font-size:30px;color:white; position:relative ; top:-66px; right:9px;'></i>
+    
+                  </div>
+      
+                </div>
+      
+                <div class="boxesdiv">
+                  <p class="boxtitle">صندوق نبع السلام باقات</p>
+                  <p class="boxvalue">10,213 LT</p>
+                  <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+                  </p>
+                  <p class="tl">TL</p>
+    
+                  <div class="yellowbox"> 
+                    <i class="fa-solid fa-cash-register" style='font-size:30px;color:white; position:relative ; top:-70px; right:9px;'></i>
+    
+                  </div>
+                </div>
+      
+                <div class="boxesdiv"> 
+                  <p class="boxtitle">صندوق شفيق السلام باقات</p>
+                  <p class="boxvalue">10,213 LT</p>
+                  <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+                  </p>
+                  <p class="tl">TL</p>
+    
+                  <div class="yellowbox">
+                    <i class="fa-solid fa-cash-register" style='font-size:30px;color:white; position:relative ; top:-70px; right:9px;'></i>
+    
+                  </div>
+                </div>
+        
+              </div>
+
+              <br>
+
+              
+                  <div id="boxes">
+        
+                    <div class="boxesdiv">
+                      <p class="boxtitle">صندوق نبع السلام باقات</p>
+                      <p class="boxvalue">10,213 LT</p>
+                      <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+                      </p>
+                      <p class="tl">TL</p>
+        
+                      <div class="yellowbox">
+
+                        <i class='fas fa-shopping-cart' style='font-size:30px;color:white; position:relative ; top:-66px; right:9px;'></i>
+        
+                      </div>
+          
+                    </div>
+          
+                    <div class="boxesdiv">
+                      <p class="boxtitle">صندوق نبع السلام باقات</p>
+                      <p class="boxvalue">10,213 LT</p>
+                      <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+                      </p>
+                      <p class="tl">TL</p>
+        
+                      <div class="yellowbox"> 
+                        <i class="fas fa-boxes" style='font-size:30px;color:white; position:relative ; top:-70px; right:9px;'></i>
+        
+                      </div>
+                    </div>
+          
+                    <div class="boxesdiv"> 
+                      <p class="boxtitle">صندوق شفيق السلام باقات</p>
+                      <p class="boxvalue">10,213 LT</p>
+                      <p class="boxamount">الرصيد <i class='fas fa-exclamation-circle' style='font-size:10px;color:#C4942F'></i>
+                      </p>
+                      <p class="tl">TL</p>
+        
+                      <div class="yellowbox">
+                        <i class="fas fa-boxes" style='font-size:30px;color:white; position:relative ; top:-70px; right:9px;'></i>
+        
+                      </div>
+                    </div>
+        
+        
+                  </div>
+          <!--end of section 2-->
+
+          <!--start of section 3-->
+
+          <div class="piecharts">
+
+            <div class="chart1">
+
+              <div class="chartexp">
+                <p class="profits"> اجمالي الارباح <i class="fa-solid fa-chart-simple" style="font-size:30px;"></i>  </p>
+              
+                <p class="packetsprofit"> $400  ارباح الباقات <i class="fa fa-circle" style='font-size:10px;color: #148F77;
+                  '></i>  </p>
+  
+                <p class="packetsprofit"> $200 ارباح المتاجرة <i class="fa fa-circle " style='font-size:10px;color:#48C9B0'></i> </p>
+  
+                <p class="profitsv" > <i style="font-size :20px ;">600$</i> الرصيد <i class='fas fa-exclamation-circle' style='font-size:13px;color:#C4942F'></i>
+
+                
+              </div>
+
+             <div class="chartdiv">
+              <canvas id="myChart" style="width:100px ; height:100px" ></canvas>
+             </div>
+
+             
+            </div>
+
+
+
+          
+            <div class="chart2">
+              <p class="chart2title">  تقديرات الارباح لأخر شهرين  <i class="fa fa-line-chart"></i> </p>
+
+              <p class="chart2data"> 01.11.2023 <i class="fa fa-circle " style='font-size:10px;color:#48C9B0'></i> </p>
+              <p class="chart2data1">01.12.2023  <i class="fa fa-circle" style='font-size:10px;color: #148F77;
+                '></i> </p>
+
+                <div class="chartdiv1">
+                  <canvas id="myChart1"></canvas>
+                </div>
+            
+            </div>
+
+
+          </div>
+
+
+
+
+           <!--end of section 3-->
+
+
+          
+
+            </article>
+        </section>
+
+        <!--end of the main container-->
+
+
+
+<script>
+
+//start of side list
+    document.getElementById("test").addEventListener("click", myFunction);
+
+    function myFunctionTwo(open) {
+        if(open){
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("head").style.marginRight = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+            document.getElementById("openlist").style.marginRight = "250px";
+
+        }else{
+            document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("head").style.marginRight = "0";
+        document.getElementById("main").style.marginRight = "0";
+        document.getElementById("openlist").style.marginRight = "0";
+            }
+    }       
+
+    function myFunction(event) {//have myFunction queue the work for everything that needs to be done.
+    if(! event.currentTarget.opened){
+    event.currentTarget.opened = true;
+    myFunctionTwo(true);
+
+    }else{
+    event.currentTarget.opened = false;
+    myFunctionTwo(false);
+
+    }
+
+    var x = event.currentTarget.children[0];
+    x.classList.toggle("fa-times");       
+    x.classList.toggle("fa-bars");     
+    }
+
+//end of side list
+
+//sidelist sublist
+function fAbreGuias() {
+  var vGuias = document.getElementById('guias');
+  document.getElementById("settings1").style.top="575px";
+  document.getElementById("settings11").style.top="575px";
+
+  document.getElementById("logout").style.top="620px";
+  document.getElementById("logoutimg").style.top="620px";
+  if (vGuias.style.display == "block") { // if vGuias hidden, display it 
+    vGuias.style.display = "none";
+   
+    document.getElementById("settings11").style.top="505px";
+    document.getElementById("settings1").style.top="500px";
+
+  document.getElementById("logout").style.top="555px";
+  document.getElementById("logoutimg").style.top="553px";
+  } else { // if vGuias displayed, hidden it
+    vGuias.style.display = "block";
+  }
+}
+//end of sidelist sublist      
+
+//notification
+var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+
+  document.getElementById("box").style.display = "block";
+
+	if (down) {
+		box.style.height  = '0px';
+		box.style.opacity = 0;
+		down = false;
+	}else {
+		box.style.height  = 'auto';
+		box.style.opacity = 1;
+		down = true;
+	}
+}
+
+//notification
+
+
+//charts 
+
+  const xValues = ["  ارباح المتاجرة", "ارباح الباقات" ];
+  const yValues = [20, 40];
+  const barColors = [
+    
+  
+    "#48C9B0","#148F77"
+  
+  ];
+  
+  new Chart("myChart", {
+    type: "pie",
+    data: {
+  
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+      
+      }
+    }
+  });
+
+  const xxValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChart1", {
+  type: "line",
+  data: {
+    labels: xxValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "#148F77",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "#A3E4D7",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+ 
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
